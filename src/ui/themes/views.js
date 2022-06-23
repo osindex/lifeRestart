@@ -200,7 +200,7 @@ const dark = {
         [pages.TRAJECTORY]: "default/trajectory",
         [pages.SUMMARY]: "default/summary",
         [pages.ACHIEVEMENT]: "default/achievement",
-        [pages.THANKS]: "default/thanks",
+        [pages.THANKS]: "default/thanksext",
         [pages.THEMES]: 'themes',
         [pages.SAVELOAD]: 'saveload',
         [pages.MODE]: 'default/mode',

@@ -29,8 +29,9 @@ export default ({
     UI_Title_Subsequent: 'The rubbish life doesn\'t want to stay for a second',
     UI_Remake: '↻Remake Now',
     UI_Thanks: 'Thx',
+    UI_Thanks: 'Achv',
     UI_Achievement: 'Achv',
-    UI_Cyber_Theme_Art_Design: 'UI Design by 晰晰',
+    UI_Cyber_Theme_Art_Design: ' ',
 
     UI_Title_Talent: 'Talent Draw',
     UI_Talent_Draw: '!10 Pulls!',

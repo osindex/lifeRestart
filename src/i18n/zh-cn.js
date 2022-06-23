@@ -31,8 +31,9 @@ export default ({
     UI_Title_Subsequent: '这垃圾人生一秒也不想待了',
     UI_Remake: '↻立即重开',
     UI_Thanks: '感谢',
+    UI_Thanks: '成就',
     UI_Achievement: '成就',
-    UI_Cyber_Theme_Art_Design: 'UI 设计 by 晰晰',
+    UI_Cyber_Theme_Art_Design: ' ',
 
     UI_Title_Talent: '天赋抽卡',
     UI_Talent_Draw: '10连抽！',
@@ -147,7 +148,7 @@ export default ({
     UI_UniqueWaTaShiContent: '\n6000万玩家中独一无二的角色卡\n所有属性 所有天赋 随机生成\n 每人只能生成一次',
     UI_GenerateNow: '立即生成',
 
-    M_NoRank: '别卷了，没有排行榜',
+    M_NoRank: '现在还没有~有意见访问：im.youngfan.top',
     M_PleaseSelectOne: '请选择一个名人',
     M_UnGenerate: '独一无二的我还没有生成',
     M_DisableExtendTalent: '名人模式不能继承天赋',

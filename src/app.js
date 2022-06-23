@@ -32,7 +32,7 @@ globalThis.goto = async tag => {
 }
 class App{
     constructor(){
-        this.name = 'lifeRestart';
+        this.name = '重生';
         this.version = '2.0.0';
         console.log(`${this.name} ${this.version}`);
     }
@@ -154,6 +154,7 @@ class App{
     async start({
         language = App.languages['zh-cn'],
         theme = 'default',
+        // theme = 'cyber',
     }) {
         this.resigterEvent();
         this.#initLaya();

@@ -3,8 +3,9 @@ export default class Main extends ui.view.DefaultTheme.MainUI {
         super();
         this.btnRemake.on(Laya.Event.CLICK, this, ()=>$ui.switchView(UI.pages.MODE));
         this.btnAchievement.on(Laya.Event.CLICK, this, ()=>$ui.switchView(UI.pages.ACHIEVEMENT));
-        this.btnThanks.on(Laya.Event.CLICK, this, ()=>$ui.switchView(UI.pages.THANKS));
-        this.btnGithub.on(Laya.Event.CLICK, this, goto, ['github']);
+        // this.btnThanks.on(Laya.Event.CLICK, this, ()=>$ui.switchView(UI.pages.THANKS));
+        this.btnThanks.on(Laya.Event.CLICK, this, ()=>$ui.switchView(UI.pages.ACHIEVEMENT));
+        // this.btnGithub.on(Laya.Event.CLICK, this, goto, ['github']);
         this.btnDiscord.on(Laya.Event.CLICK, this, goto, ['discord']);
         this.btnThemes.on(Laya.Event.CLICK, this, ()=>$ui.showDialog(UI.pages.THEMES));
         this.btnSaveLoad.on(Laya.Event.CLICK, this, ()=>$ui.showDialog(UI.pages.SAVELOAD));
@@ -17,8 +18,11 @@ export default class Main extends ui.view.DefaultTheme.MainUI {
     }
 
     init() {
+        // btnAchievement 改为 btnThanks
+        this.btnGithub.visible = 
         this.btnDiscord.visible =
-        this.btnAchievement.visible =
+        this.btnAchievement.visible = false
+        // this.btnAchievement.visible =
         this.btnThanks.visible = !!core.times;
         const text = this.labSubTitle.text;
         this.labSubTitle.text = ' ';
