@@ -1,6 +1,7 @@
 export default class Themes extends ui.view.ThemesUI {
     constructor() {
         super();
+        console.log('theme....')
         this.btnClose.on(Laya.Event.CLICK, this, ()=>this.close());
         this.btnOK.on(Laya.Event.CLICK, this, async ()=>{
             const selected = this.selected;

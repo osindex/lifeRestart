@@ -28,6 +28,8 @@ export default class SaveLoad extends ui.view.SaveLoadUI {
         });
 
         this.btnSave.on(Laya.Event.CLICK, this, ()=>{
+            console.log('存档', this.data)
+            return false
             let blob = new Blob([this.data], { type: 'application/json' });
             const slice = blob.slice || blob.webkitSlice || blob.mozSlice;
             blob = slice.call(blob, 0, blob.size, 'application/octet-stream');
@@ -41,6 +43,9 @@ export default class SaveLoad extends ui.view.SaveLoadUI {
             URL.revokeObjectURL(a.href);
         });
         this.btnLoad.on(Laya.Event.CLICK, this, ()=>{
+            console.log('读档', this.data)
+            // this.data = [reader.result]
+            return false
             const file = document.createElement('input');
             file.setAttribute('type', 'file');
             file.setAttribute('name', 'file');

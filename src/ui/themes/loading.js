@@ -1,6 +1,7 @@
 export default class Loading extends ui.view.LoadingUI {
     constructor() {
         super();
+        console.log('加载....')
     }
 
     static load() {

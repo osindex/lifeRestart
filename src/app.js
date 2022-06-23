@@ -5,6 +5,7 @@ import './ui/promisesLaya.js'
 import './ui/layaUI.max.all.js';
 import UIManager from './ui/uiManager.js';
 import * as utils from './functions/util.js';
+import Request from './functions/request.js';
 
 globalThis.UIManager =
 globalThis.UI =
@@ -14,6 +15,7 @@ globalThis.$_ = utils;
 
 globalThis.goto = async tag => {
     let url;
+    // return false;
     switch(tag) {
         case 'github': url = 'https://github.com/VickScarlet/lifeRestart'; break;
         case 'discord': url = 'https://discord.gg/U3qrf49NMQ'; break;
@@ -35,6 +37,11 @@ class App{
         this.name = '重生';
         this.version = '2.0.0';
         console.log(`${this.name} ${this.version}`);
+        // console.log(http);
+        Request.getInstance().get('http://localhost:8080/', null, this.testGet)
+    }
+    testGet(res) {
+        console.log(res,'testGet')
     }
 
     #language;

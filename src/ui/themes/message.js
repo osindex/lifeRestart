@@ -5,6 +5,7 @@ export default class MessagePopup extends ui.view.MessagePopupUI {
         this.boxBg.defaultColor = "#000000";
         this.boxBg.hoverColor = "#000000";
         this.boxBg.radius = 20;
+        console.log('排行榜...')
     }
 
     async popup({message}, parent) {
